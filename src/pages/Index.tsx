@@ -6,7 +6,7 @@ import ProductCard from '@/components/ProductCard';
 import Footer from '@/components/Footer';
 import PlanetBackground from '@/components/PlanetBackground';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Sparkles, Brain, FileText, GraduationCap } from 'lucide-react';
+import { ArrowRight, Sparkles, Brain, FileText, GraduationCap, Star } from 'lucide-react';
 import { 
   Carousel,
   CarouselContent,
@@ -24,6 +24,73 @@ const Index = () => {
       {/* Hero Section */}
       <Hero />
       
+      {/* About Section */}
+      <section className="py-20 relative" id="about">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div className="order-2 lg:order-1">
+              <div className="inline-flex items-center justify-center gap-2 mb-3 px-4 py-1.5 rounded-full bg-neon-mint/10 border border-neon-mint/20">
+                <Sparkles className="h-4 w-4 text-neon-mint" />
+                <span className="text-sm font-jetbrains text-neon-mint">About Innovata Labs</span>
+              </div>
+              <h2 className="text-3xl md:text-4xl font-sora font-bold mb-6">Creating <span className="gradient-text">AI-Powered</span> Solutions</h2>
+              <p className="text-text-grey mb-6 text-lg">
+                Innovata Labs is a future-forward digital innovation company dedicated to solving real-world problems using the power of AI, emotional intelligence, and intuitive design.
+              </p>
+              <p className="text-text-grey mb-8">
+                We bring together empathy, technology, and vision to create products that lead in their industries — from career acceleration and mental wellness to personalized learning and astrology-based self-discovery.
+              </p>
+              <Button className="btn-primary group">
+                Learn More About Us <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </div>
+            
+            <div className="order-1 lg:order-2">
+              <div className="glass-panel p-8 animate-pulse-glow relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-neon-mint/20 to-cyber-purple/20 rounded-full blur-xl"></div>
+                <div className="absolute bottom-0 left-0 w-20 h-20 bg-gradient-to-tr from-dreamy-pink/20 to-neon-mint/20 rounded-full blur-xl"></div>
+                
+                <h3 className="text-white text-xl font-sora font-bold mb-6">Why Choose Innovata Labs?</h3>
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <div className="w-8 h-8 rounded-full bg-neon-mint/20 flex items-center justify-center text-neon-mint shrink-0 mt-1">
+                      <Brain className="h-4 w-4" />
+                    </div>
+                    <div>
+                      <h4 className="text-white font-medium">AI With Purpose</h4>
+                      <p className="text-text-grey text-sm">All our products use AI to enhance human lives, not replace them.</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start gap-3">
+                    <div className="w-8 h-8 rounded-full bg-cyber-purple/20 flex items-center justify-center text-cyber-purple shrink-0 mt-1">
+                      <Star className="h-4 w-4" />
+                    </div>
+                    <div>
+                      <h4 className="text-white font-medium">Design-First Thinking</h4>
+                      <p className="text-text-grey text-sm">We obsess over user experience, UI, and emotional connection.</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start gap-3">
+                    <div className="w-8 h-8 rounded-full bg-dreamy-pink/20 flex items-center justify-center text-dreamy-pink shrink-0 mt-1">
+                      <FileText className="h-4 w-4" />
+                    </div>
+                    <div>
+                      <h4 className="text-white font-medium">Privacy-Focused</h4>
+                      <p className="text-text-grey text-sm">We never compromise user trust. Full transparency, always.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        {/* Decorative elements */}
+        <div className="absolute -bottom-32 -right-32 w-64 h-64 rounded-full bg-cyber-purple/10 blur-3xl"></div>
+      </section>
+      
       {/* Products Section */}
       <section className="py-20 relative" id="products">
         <div className="container mx-auto px-4">
@@ -32,36 +99,72 @@ const Index = () => {
               <Sparkles className="h-4 w-4 text-cyber-purple" />
               <span className="text-sm font-jetbrains text-cyber-purple">Our Innovation Suite</span>
             </div>
-            <h2 className="text-3xl md:text-5xl font-sora font-bold mb-6 gradient-text">Our Universe of Products</h2>
+            <h2 className="text-3xl md:text-5xl font-sora font-bold mb-6 gradient-text">Our Flagship Products</h2>
             <p className="text-lg text-text-grey">
               Discover our ecosystem of AI-powered platforms designed to enhance different aspects of human experience
             </p>
           </div>
           
           {/* Product Cards Section */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <ProductCard 
-              title="Edutians" 
-              description="Personalized AI learning platform that adapts to your unique learning style, making education more engaging and effective."
-              icon="🧠"
-              color="#12F7D6"
-              glowColor="rgba(18,247,214,0.5)"
-            />
-            
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <ProductCard 
               title="Serene" 
-              description="AI-driven mindfulness and well-being companion that helps you maintain balance and reduce stress in your daily life."
+              description="A compassionate AI-driven mental health companion that helps users cope with anxiety, depression, loneliness, and burnout."
               icon="🧘"
               color="#7A5FFF"
               glowColor="rgba(122,95,255,0.5)"
+              category="Mental Wellness"
+              website="serene.innovatalabs.ai"
+              features={[
+                "Emotional Analysis",
+                "Daily Support",
+                "Mindfulness Tools"
+              ]}
             />
             
             <ProductCard 
-              title="Astro AI" 
-              description="Advanced astrological insights and tarot readings powered by AI, providing spiritual guidance tailored to your personal journey."
+              title="ResuGenius" 
+              description="An AI-powered resume builder and analyzer that's miles ahead. From real-time keyword optimization to AI coaching."
+              icon="📄"
+              color="#12F7D6"
+              glowColor="rgba(18,247,214,0.5)"
+              category="Career Tools"
+              website="resumegenius.innovatalabs.ai"
+              features={[
+                "Keyword Optimization",
+                "Job Description Matching",
+                "AI Coaching"
+              ]}
+            />
+            
+            <ProductCard 
+              title="Edutians" 
+              description="A smart learning ecosystem that transforms how students absorb, retain, and apply knowledge."
+              icon="🎓"
+              color="#12F7D6"
+              glowColor="rgba(18,247,214,0.5)"
+              category="Smart Learning"
+              website="edutians.innovatalabs.ai"
+              features={[
+                "Video Summarization",
+                "Lecture Notes",
+                "Revision Schedules"
+              ]}
+            />
+            
+            <ProductCard 
+              title="AstroWhisper" 
+              description="An elegant AI spiritual guide combining astrology, tarot, moon cycles, and rituals for deeply personal insights."
               icon="✨"
               color="#FF70A6"
               glowColor="rgba(255,112,166,0.5)"
+              category="Astrology & Tarot"
+              website="astro.innovatalabs.ai"
+              features={[
+                "Personal Insights",
+                "Cosmic Compatibility",
+                "Manifestation Journeys"
+              ]}
             />
           </div>
           
@@ -76,12 +179,37 @@ const Index = () => {
         <div className="absolute -top-32 -left-32 w-64 h-64 rounded-full bg-neon-mint/10 blur-3xl"></div>
       </section>
       
+      {/* Vision Section */}
+      <section className="py-16 relative overflow-hidden">
+        <div className="container mx-auto px-4">
+          <div className="glass-panel p-8 md:p-12 backdrop-blur-xl">
+            <div className="text-center max-w-3xl mx-auto">
+              <div className="inline-flex items-center justify-center gap-2 mb-3 px-4 py-1.5 rounded-full bg-dreamy-pink/10 border border-dreamy-pink/20">
+                <Sparkles className="h-4 w-4 text-dreamy-pink" />
+                <span className="text-sm font-jetbrains text-dreamy-pink">Our Vision</span>
+              </div>
+              <h2 className="text-3xl md:text-4xl font-sora font-bold mb-6">
+                Building the <span className="text-dreamy-pink">Future</span> Together
+              </h2>
+              <p className="text-text-grey text-lg mb-8">
+                To become the most impactful innovation lab of the next decade — empowering millions through problem-solving products that matter.
+              </p>
+              <Button className="btn-primary" style={{ background: "linear-gradient(to right, #FF70A6, #FFA6C7)" }}>
+                Join Our Waitlist
+              </Button>
+            </div>
+          </div>
+        </div>
+        
+        <div className="absolute -top-32 left-1/2 w-64 h-64 rounded-full bg-dreamy-pink/10 blur-3xl"></div>
+      </section>
+      
       {/* Features Carousel */}
       <section className="py-16 relative overflow-hidden">
         <div className="container mx-auto px-4 mb-10">
           <div className="text-center">
             <h2 className="text-3xl md:text-4xl font-sora font-bold mb-4">
-              Flagship <span className="text-neon-mint">Products</span>
+              Products <span className="text-neon-mint">Spotlight</span>
             </h2>
             <p className="text-text-grey max-w-2xl mx-auto">
               Our innovative AI-powered platforms are designed to enhance different aspects of human experience
@@ -154,59 +282,6 @@ const Index = () => {
         </div>
         
         <div className="absolute -bottom-32 -right-32 w-80 h-80 rounded-full bg-dreamy-pink/10 blur-3xl"></div>
-      </section>
-      
-      {/* About Section */}
-      <section className="py-20 relative" id="about">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="order-2 lg:order-1">
-              <div className="inline-flex items-center justify-center gap-2 mb-3 px-4 py-1.5 rounded-full bg-neon-mint/10 border border-neon-mint/20">
-                <Sparkles className="h-4 w-4 text-neon-mint" />
-                <span className="text-sm font-jetbrains text-neon-mint">Our Mission</span>
-              </div>
-              <h2 className="text-3xl md:text-4xl font-sora font-bold mb-6">Our Mission to <span className="gradient-text">Transform</span> the Future</h2>
-              <p className="text-text-grey mb-6 text-lg">
-                At Innovata Labs, we're revolutionizing how people interact with technology through our suite of AI-powered platforms, each designed to enhance human potential.
-              </p>
-              <p className="text-text-grey mb-8">
-                From personalized learning to mental wellness and spiritual insights, our AI solutions are built to create meaningful impacts on individual lives and society as a whole.
-              </p>
-              <Button className="btn-primary group">
-                About Our Journey <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-              </Button>
-            </div>
-            
-            <div className="order-1 lg:order-2">
-              <div className="glass-panel p-8 animate-pulse-glow relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-neon-mint/20 to-cyber-purple/20 rounded-full blur-xl"></div>
-                <div className="absolute bottom-0 left-0 w-20 h-20 bg-gradient-to-tr from-dreamy-pink/20 to-neon-mint/20 rounded-full blur-xl"></div>
-                
-                <div className="grid grid-cols-2 gap-8">
-                  <div className="text-center">
-                    <h3 className="text-neon-mint text-4xl font-sora font-bold">3+</h3>
-                    <p className="text-text-grey text-sm mt-2">AI Platforms</p>
-                  </div>
-                  <div className="text-center">
-                    <h3 className="text-cyber-purple text-4xl font-sora font-bold">10k+</h3>
-                    <p className="text-text-grey text-sm mt-2">Active Users</p>
-                  </div>
-                  <div className="text-center">
-                    <h3 className="text-dreamy-pink text-4xl font-sora font-bold">98%</h3>
-                    <p className="text-text-grey text-sm mt-2">Satisfaction Rate</p>
-                  </div>
-                  <div className="text-center">
-                    <h3 className="text-neon-mint text-4xl font-sora font-bold">24/7</h3>
-                    <p className="text-text-grey text-sm mt-2">AI Assistance</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        {/* Decorative elements */}
-        <div className="absolute -bottom-32 -right-32 w-64 h-64 rounded-full bg-cyber-purple/10 blur-3xl"></div>
       </section>
       
       {/* CTA Section */}

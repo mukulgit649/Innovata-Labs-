@@ -9,6 +9,9 @@ interface ProductCardProps {
   color: string;
   glowColor: string;
   comingSoon?: boolean;
+  category?: string;
+  website?: string;
+  features?: string[];
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({ 
@@ -17,7 +20,10 @@ const ProductCard: React.FC<ProductCardProps> = ({
   icon, 
   color, 
   glowColor,
-  comingSoon = false
+  comingSoon = false,
+  category,
+  website,
+  features
 }) => {
   return (
     <div 
@@ -38,6 +44,20 @@ const ProductCard: React.FC<ProductCardProps> = ({
           <span className="text-xl">{icon}</span>
         </div>
         
+        {category && (
+          <div className="mb-2">
+            <span 
+              className="text-xs px-2 py-1 rounded-full" 
+              style={{ 
+                backgroundColor: `${color}20`,
+                color: color 
+              }}
+            >
+              {category}
+            </span>
+          </div>
+        )}
+        
         <h3 className="text-xl font-sora font-semibold mb-2" style={{ color }}>
           {title}
         </h3>
@@ -45,8 +65,19 @@ const ProductCard: React.FC<ProductCardProps> = ({
         <p className="text-text-grey text-sm mb-4 flex-grow">
           {description}
         </p>
+
+        {features && features.length > 0 && (
+          <ul className="space-y-2 mb-4">
+            {features.map((feature, index) => (
+              <li key={index} className="flex items-start gap-2">
+                <span style={{ color }} className="text-xs mt-1">✓</span>
+                <span className="text-text-grey text-xs">{feature}</span>
+              </li>
+            ))}
+          </ul>
+        )}
         
-        <div className="mt-auto">
+        <div className="mt-auto flex items-center justify-between">
           {comingSoon ? (
             <span className="inline-block px-3 py-1 text-xs rounded-full border border-white/20 text-white/60">
               Coming Soon
@@ -58,6 +89,10 @@ const ProductCard: React.FC<ProductCardProps> = ({
             >
               Explore Platform <ArrowUpRight size={16} />
             </button>
+          )}
+          
+          {website && (
+            <span className="text-xs text-text-grey">{website}</span>
           )}
         </div>
       </div>
