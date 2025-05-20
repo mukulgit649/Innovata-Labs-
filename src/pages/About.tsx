@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -20,6 +19,25 @@ const About = () => {
             <p className="text-xl text-text-grey">
               A future-forward digital innovation company dedicated to solving real-world problems using the power of AI, emotional intelligence, and intuitive design.
             </p>
+          </div>
+        </div>
+      </section>
+      
+      {/* CEO & Founder Section */}
+      <section className="py-8">
+        <div className="container mx-auto px-4">
+          <div className="max-w-2xl mx-auto">
+            <div className="glass-panel p-8 text-center animate-pulse-glow mb-12">
+              <div className="flex flex-col items-center">
+                <div className="w-20 h-20 rounded-full bg-gradient-to-br from-neon-mint/30 to-cyber-purple/30 flex items-center justify-center mb-4">
+                  <span className="text-4xl">👤</span>
+                </div>
+                <h2 className="text-2xl font-sora font-bold mb-2 text-neon-mint">Mukul — CEO & Founder</h2>
+                <p className="text-text-grey text-lg font-medium">
+                  Driven by relentless curiosity and a passion for meaningful impact, Mukul is the visionary force behind Innovata Labs. With a rare blend of technical mastery, creative insight, and unwavering determination, he transforms bold ideas into world-class products. Mukul's leadership inspires teams to push boundaries, embrace innovation, and build technology that truly elevates human potential. At the heart of Innovata Labs, he is not just a founder, but a catalyst for change—dedicated to shaping a future where AI empowers, uplifts, and connects us all.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -130,14 +148,16 @@ const About = () => {
               icon="🧠"
               color="#7A5FFF"
               glowColor="rgba(122,95,255,0.5)"
+              website="https://serenehere.vercel.app"
             />
             
             <ProductCard 
-              title="ResuGenius" 
+              title="Resuminate" 
               description="The smartest resume builder on Earth with real-time keyword optimization, job description matching, and AI coaching."
               icon="📄"
               color="#12F7D6"
               glowColor="rgba(18,247,214,0.5)"
+              website="https://resuminate.vercel.app"
             />
             
             <ProductCard 
@@ -146,6 +166,7 @@ const About = () => {
               icon="🎓"
               color="#FF70A6"
               glowColor="rgba(255,112,166,0.5)"
+              website="https://edutians.vercel.app"
             />
             
             <ProductCard 
@@ -154,6 +175,7 @@ const About = () => {
               icon="✨"
               color="#12F7D6"
               glowColor="rgba(18,247,214,0.5)"
+              website="https://astrowhisper.vercel.app"
             />
           </div>
           
@@ -173,22 +195,22 @@ const About = () => {
                     <tr className="border-b border-white/10">
                       <td className="py-3 px-4 text-white">Serene</td>
                       <td className="py-3 px-4 text-text-grey">Mental Wellness AI</td>
-                      <td className="py-3 px-4 text-cyber-purple">serene.innovatalabs.ai</td>
+                      <td className="py-3 px-4 text-cyber-purple">serenehere.vercel.app</td>
                     </tr>
                     <tr className="border-b border-white/10">
-                      <td className="py-3 px-4 text-white">ResuGenius</td>
+                      <td className="py-3 px-4 text-white">Resuminate</td>
                       <td className="py-3 px-4 text-text-grey">Career Tools</td>
-                      <td className="py-3 px-4 text-cyber-purple">resumegenius.innovatalabs.ai</td>
+                      <td className="py-3 px-4 text-cyber-purple">resuminate.vercel.app</td>
                     </tr>
                     <tr className="border-b border-white/10">
                       <td className="py-3 px-4 text-white">Edutians</td>
                       <td className="py-3 px-4 text-text-grey">Smart Learning</td>
-                      <td className="py-3 px-4 text-cyber-purple">edutians.innovatalabs.ai</td>
+                      <td className="py-3 px-4 text-cyber-purple">edutians.vercel.app</td>
                     </tr>
                     <tr>
                       <td className="py-3 px-4 text-white">AstroWhisper</td>
                       <td className="py-3 px-4 text-text-grey">Astrology & Tarot</td>
-                      <td className="py-3 px-4 text-cyber-purple">astro.innovatalabs.ai</td>
+                      <td className="py-3 px-4 text-cyber-purple">astrowhisper.vercel.app</td>
                     </tr>
                   </tbody>
                 </table>

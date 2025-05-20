@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ArrowUpRight } from 'lucide-react';
 
@@ -77,22 +76,21 @@ const ProductCard: React.FC<ProductCardProps> = ({
           </ul>
         )}
         
-        <div className="mt-auto flex items-center justify-between">
+        <div className="mt-auto">
           {comingSoon ? (
             <span className="inline-block px-3 py-1 text-xs rounded-full border border-white/20 text-white/60">
               Coming Soon
             </span>
           ) : (
-            <button 
-              className="flex items-center gap-2 text-sm font-medium transition-all hover:gap-3"
+            <a 
+              href={website}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-sm font-medium transition-all hover:gap-3 cursor-pointer"
               style={{ color }}
             >
               Explore Platform <ArrowUpRight size={16} />
-            </button>
-          )}
-          
-          {website && (
-            <span className="text-xs text-text-grey">{website}</span>
+            </a>
           )}
         </div>
       </div>

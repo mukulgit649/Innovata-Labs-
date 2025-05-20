@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
@@ -114,7 +113,7 @@ const Index = () => {
               color="#7A5FFF"
               glowColor="rgba(122,95,255,0.5)"
               category="Mental Wellness"
-              website="serene.innovatalabs.ai"
+              website="https://serenehere.vercel.app"
               features={[
                 "Emotional Analysis",
                 "Daily Support",
@@ -123,13 +122,13 @@ const Index = () => {
             />
             
             <ProductCard 
-              title="ResuGenius" 
+              title="Resuminate" 
               description="An AI-powered resume builder and analyzer that's miles ahead. From real-time keyword optimization to AI coaching."
               icon="📄"
               color="#12F7D6"
               glowColor="rgba(18,247,214,0.5)"
               category="Career Tools"
-              website="resumegenius.innovatalabs.ai"
+              website="https://resuminate.vercel.app"
               features={[
                 "Keyword Optimization",
                 "Job Description Matching",
@@ -144,7 +143,7 @@ const Index = () => {
               color="#12F7D6"
               glowColor="rgba(18,247,214,0.5)"
               category="Smart Learning"
-              website="edutians.innovatalabs.ai"
+              website="https://edutians.vercel.app"
               features={[
                 "Video Summarization",
                 "Lecture Notes",
@@ -159,7 +158,7 @@ const Index = () => {
               color="#FF70A6"
               glowColor="rgba(255,112,166,0.5)"
               category="Astrology & Tarot"
-              website="astro.innovatalabs.ai"
+              website="https://astrowhisper.vercel.app"
               features={[
                 "Personal Insights",
                 "Cosmic Compatibility",
@@ -245,11 +244,11 @@ const Index = () => {
                       <FileText className="h-8 w-8 text-neon-mint" />
                     </div>
                     <div>
-                      <h3 className="text-xl md:text-2xl font-sora font-bold text-neon-mint mb-2">ResuGenius</h3>
+                      <h3 className="text-xl md:text-2xl font-sora font-bold text-neon-mint mb-2">Resuminate</h3>
                       <p className="text-text-grey">
                         An AI-powered resume builder and analyzer that's miles ahead. From real-time keyword 
                         optimization and job description matching to AI coaching and role-based resume suggestions 
-                        — ResuGenius helps you stand out and succeed.
+                        — Resuminate helps you stand out and succeed.
                       </p>
                     </div>
                   </div>
@@ -268,6 +267,23 @@ const Index = () => {
                         A smart learning ecosystem that transforms how students absorb, retain, and apply knowledge. 
                         From video summarization and lecture notes to personalized revision schedules — Edutians is 
                         built for today's learners and tomorrow's leaders.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </CarouselItem>
+              {/* AstroWhisper Spotlight */}
+              <CarouselItem>
+                <div className="glass-panel p-8 backdrop-blur-xl">
+                  <div className="flex flex-col md:flex-row gap-8 items-center">
+                    <div className="w-16 h-16 rounded-full bg-pink-400/20 flex items-center justify-center shrink-0">
+                      <span className="text-3xl">✨</span>
+                    </div>
+                    <div>
+                      <h3 className="text-xl md:text-2xl font-sora font-bold text-pink-400 mb-2">AstroWhisper</h3>
+                      <p className="text-text-grey">
+                        An elegant AI spiritual guide combining astrology, tarot, moon cycles, and rituals for deeply personal insights. 
+                        AstroWhisper offers intuitive guidance, cosmic compatibility, and manifestation journeys — all powered by ancient wisdom and modern AI.
                       </p>
                     </div>
                   </div>

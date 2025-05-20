@@ -1,6 +1,6 @@
-
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
@@ -19,30 +19,35 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mt-8">
-            <button className="btn-primary flex items-center justify-center gap-2">
+            <Link to="/products" className="btn-primary flex items-center justify-center gap-2">
               Explore Our Products
               <ArrowRight size={18} />
-            </button>
-            <button className="btn-secondary">
+            </Link>
+            <Link to="/about" className="btn-secondary">
               About Our Mission
-            </button>
+            </Link>
           </div>
 
           {/* Floating badges */}
-          <div className="relative w-full h-32 md:h-64 mt-8">
-            <div className="absolute left-1/4 top-0 transform -translate-x-1/2 glass-panel p-4 animate-float">
+          <div className="relative w-full h-64 md:h-80 mt-8">
+            <div className="absolute left-4 top-2 glass-panel p-4 animate-float">
               <span className="text-sm font-jetbrains text-neon-mint">01. Edutians</span>
               <p className="text-xs mt-1">Smart AI Learning Platform</p>
             </div>
             
-            <div className="absolute right-1/4 top-1/3 transform -translate-x-1/2 glass-panel p-4 animate-float" style={{ animationDelay: "1s" }}>
+            <div className="absolute right-4 top-10 glass-panel p-4 animate-float" style={{ animationDelay: "1s" }}>
               <span className="text-sm font-jetbrains text-cyber-purple">02. Serene</span>
               <p className="text-xs mt-1">Mindfulness & Well-being AI</p>
             </div>
             
-            <div className="absolute left-1/3 bottom-0 transform -translate-x-1/2 glass-panel p-4 animate-float" style={{ animationDelay: "2s" }}>
+            <div className="absolute left-1/4 bottom-4 glass-panel p-4 animate-float" style={{ animationDelay: "2s" }}>
               <span className="text-sm font-jetbrains text-dreamy-pink">03. Astro AI</span>
               <p className="text-xs mt-1">Astrology & Tarot Intelligence</p>
+            </div>
+            
+            <div className="absolute right-1/4 bottom-8 glass-panel p-4 animate-float" style={{ animationDelay: "2.5s" }}>
+              <span className="text-sm font-jetbrains text-neon-mint">04. Resuminate</span>
+              <p className="text-xs mt-1">AI Resume & Career Builder</p>
             </div>
           </div>
         </div>

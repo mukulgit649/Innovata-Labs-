@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -111,9 +110,15 @@ const Products = () => {
                     <span>edutians.innovatalabs.ai</span>
                   </div>
                   
-                  <Button className="btn-primary group">
+                  <a
+                    className="btn-primary group flex items-center gap-2 mt-8"
+                    href="https://edutians.vercel.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}
+                  >
                     Explore Edutians <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                  </Button>
+                  </a>
                 </div>
                 
                 <div className="order-1 lg:order-2 bg-gradient-to-br from-neon-mint/20 to-transparent p-8 flex items-center justify-center overflow-hidden relative">
@@ -184,15 +189,21 @@ const Products = () => {
                     <span>serene.innovatalabs.ai</span>
                   </div>
                   
-                  <Button className="btn-primary group" style={{ background: "linear-gradient(to right, #7A5FFF, #A78BFF)" }}>
+                  <a
+                    className="btn-primary group flex items-center gap-2 mt-8"
+                    href="https://serenehere.vercel.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ background: 'linear-gradient(to right, #7A5FFF, #A78BFF)', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}
+                  >
                     Explore Serene <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                  </Button>
+                  </a>
                 </div>
               </div>
             </CardContent>
           </Card>
           
-          {/* ResuGenius */}
+          {/* Resuminate */}
           <Card className="mb-32 glass-panel border-none overflow-hidden">
             <CardContent className="p-0">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 relative">
@@ -201,11 +212,11 @@ const Products = () => {
                     <span className="text-xs font-jetbrains text-neon-mint">03. CAREER TOOLS</span>
                   </div>
                   <h2 className="text-3xl md:text-4xl font-sora font-bold mt-2 mb-6">
-                    <span className="text-neon-mint">ResuGenius</span> — AI Resume Builder
+                    <span className="text-neon-mint">Resuminate</span> — AI Resume Builder
                   </h2>
                   <p className="text-text-grey mb-8 leading-relaxed">
                     An AI-powered resume builder and analyzer that's miles ahead. From real-time keyword optimization and 
-                    job description matching to AI coaching and role-based resume suggestions — ResuGenius helps you stand out and succeed.
+                    job description matching to AI coaching and role-based resume suggestions — Resuminate helps you stand out and succeed.
                   </p>
                   
                   <div className="space-y-6 mb-10">
@@ -239,9 +250,15 @@ const Products = () => {
                     <span>resumegenius.innovatalabs.ai</span>
                   </div>
                   
-                  <Button className="btn-primary group">
-                    Explore ResuGenius <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                  </Button>
+                  <a
+                    className="btn-primary group flex items-center gap-2 mt-8"
+                    href="https://resuminate.vercel.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}
+                  >
+                    Explore Resuminate <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  </a>
                 </div>
                 
                 <div className="order-1 lg:order-2 bg-gradient-to-br from-neon-mint/20 to-transparent p-8 flex items-center justify-center overflow-hidden relative">
@@ -312,9 +329,15 @@ const Products = () => {
                     <span>astro.innovatalabs.ai</span>
                   </div>
                   
-                  <Button className="btn-primary group" style={{ background: "linear-gradient(to right, #FF70A6, #FFA6C7)" }}>
+                  <a
+                    className="btn-primary group flex items-center gap-2 mt-8"
+                    href="https://astrowhisper.vercel.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ background: 'linear-gradient(to right, #FF70A6, #FFA6C7)', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}
+                  >
                     Explore AstroWhisper <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                  </Button>
+                  </a>
                 </div>
               </div>
             </CardContent>
@@ -348,7 +371,7 @@ const Products = () => {
                     <td className="px-4 py-4 text-text-grey">serene.innovatalabs.ai</td>
                   </tr>
                   <tr className="border-b border-white/5 hover:bg-white/5 transition-colors">
-                    <td className="px-4 py-4 text-white">ResuGenius</td>
+                    <td className="px-4 py-4 text-white">Resuminate</td>
                     <td className="px-4 py-4 text-text-grey">Career Tools</td>
                     <td className="px-4 py-4 text-text-grey">resumegenius.innovatalabs.ai</td>
                   </tr>
