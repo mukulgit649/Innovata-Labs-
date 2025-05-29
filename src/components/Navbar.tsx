@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
@@ -16,6 +15,12 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center">
+            <img
+              src="/brain-bulb-icon.svg"
+              alt="Innovata Labs Logo"
+              className="h-10 w-auto mr-3 drop-shadow-lg"
+              style={{ display: 'inline-block' }}
+            />
             <span className="text-2xl font-sora font-bold tracking-tight">
               <span className="text-white">Innovata</span>
               <span className="text-neon-mint">Labs</span>
@@ -27,7 +32,6 @@ const Navbar = () => {
             <Link to="/" className="nav-item">Home</Link>
             <Link to="/about" className="nav-item">About</Link>
             <Link to="/products" className="nav-item">Products</Link>
-            <Link to="/careers" className="nav-item">Careers</Link>
             <Link to="/contact" className="nav-item">Contact</Link>
             <button className="btn-primary">Get Started</button>
           </div>
@@ -45,7 +49,6 @@ const Navbar = () => {
               <Link to="/" className="nav-item py-2" onClick={toggleMenu}>Home</Link>
               <Link to="/about" className="nav-item py-2" onClick={toggleMenu}>About</Link>
               <Link to="/products" className="nav-item py-2" onClick={toggleMenu}>Products</Link>
-              <Link to="/careers" className="nav-item py-2" onClick={toggleMenu}>Careers</Link>
               <Link to="/contact" className="nav-item py-2" onClick={toggleMenu}>Contact</Link>
               <button className="btn-primary w-3/4 mt-2">Get Started</button>
             </div>

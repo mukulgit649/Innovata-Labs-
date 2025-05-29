@@ -34,7 +34,11 @@ const About = () => {
                 </div>
                 <h2 className="text-2xl font-sora font-bold mb-2 text-neon-mint">Mukul — CEO & Founder</h2>
                 <p className="text-text-grey text-lg font-medium">
-                  Driven by relentless curiosity and a passion for meaningful impact, Mukul is the visionary force behind Innovata Labs. With a rare blend of technical mastery, creative insight, and unwavering determination, he transforms bold ideas into world-class products. Mukul's leadership inspires teams to push boundaries, embrace innovation, and build technology that truly elevates human potential. At the heart of Innovata Labs, he is not just a founder, but a catalyst for change—dedicated to shaping a future where AI empowers, uplifts, and connects us all.
+                Driven by a deep desire to make a meaningful impact, I’ve always believed that technology should serve people — not the other way around. My journey as a founder is rooted in a single mission: to build products that solve real problems, simplify lives, and empower individuals through thoughtful, human-centered innovation.
+
+From mental wellness to education, career growth to personal guidance, I’ve created multiple platforms across the AI landscape — each born from a desire to understand people’s needs and design solutions that truly matter. I don’t just see ideas; I see opportunities to ease burdens, spark potential, and create tools that people can rely on.
+
+At the heart of everything we build is empathy, purpose, and the belief that technology, when used with care, can be a powerful force for good.
                 </p>
               </div>
             </div>
@@ -233,6 +237,20 @@ const About = () => {
             <p className="text-text-grey">
               Ready to experience the future of AI-powered solutions? Reach out to learn more about our products.
             </p>
+          </div>
+        </div>
+      </section>
+      
+      {/* Founder Description */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-2xl mx-auto">
+            <div className="glass-panel p-8 animate-pulse-glow" style={{ animationDelay: "2s" }}>
+              <h2 className="text-2xl font-sora font-bold mb-6 text-dreamy-pink">Our Founder</h2>
+              <p className="text-text-grey mb-6">
+                Driven by relentless curiosity and a passion for meaningful impact, Mukul is the visionary force behind Innovata Labs. With a rare blend of technical mastery, creative insight, and unwavering determination, he transforms bold ideas into world-class products. Mukul's leadership inspires teams to push boundaries, embrace innovation, and build technology that truly elevates human potential. At the heart of Innovata Labs, he is not just a founder, but a catalyst for change—dedicated to shaping a future where AI empowers, uplifts, and connects us all.
+              </p>
+            </div>
           </div>
         </div>
       </section>
