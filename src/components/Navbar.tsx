@@ -32,7 +32,6 @@ const Navbar = () => {
             <Link to="/" className="nav-item">Home</Link>
             <Link to="/about" className="nav-item">About</Link>
             <Link to="/products" className="nav-item">Products</Link>
-            <Link to="/contact" className="nav-item">Contact</Link>
             <button className="btn-primary">Get Started</button>
           </div>
 
@@ -49,7 +48,6 @@ const Navbar = () => {
               <Link to="/" className="nav-item py-2" onClick={toggleMenu}>Home</Link>
               <Link to="/about" className="nav-item py-2" onClick={toggleMenu}>About</Link>
               <Link to="/products" className="nav-item py-2" onClick={toggleMenu}>Products</Link>
-              <Link to="/contact" className="nav-item py-2" onClick={toggleMenu}>Contact</Link>
               <button className="btn-primary w-3/4 mt-2">Get Started</button>
             </div>
           </div>
