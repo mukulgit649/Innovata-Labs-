@@ -15,12 +15,6 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <img
-              src="/brain-bulb-icon.svg"
-              alt="Innovata Labs Logo"
-              className="h-10 w-auto mr-3 drop-shadow-lg"
-              style={{ display: 'inline-block' }}
-            />
             <span className="text-2xl font-sora font-bold tracking-tight">
               <span className="text-white">Innovata</span>
               <span className="text-neon-mint">Labs</span>
