@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap');
@@ -35,8 +34,13 @@
     @apply border-border;
   }
 
+  html {
+    @apply scroll-smooth;
+  }
+
   body {
     @apply bg-space-black text-text-white font-inter m-0 p-0 overflow-x-hidden;
+    -webkit-tap-highlight-color: transparent;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -49,6 +53,11 @@
 
   code, pre {
     @apply font-jetbrains;
+  }
+
+  /* Improve touch targets */
+  button, a {
+    @apply touch-manipulation;
   }
 }
 
@@ -66,17 +75,17 @@
   }
   
   .btn-primary {
-    @apply px-6 py-3 rounded-md bg-gradient-to-r from-cyber-purple to-dreamy-pink text-white font-sora 
-           font-semibold transition-all hover:shadow-[0_0_15px_rgba(255,112,166,0.5)];
+    @apply px-4 sm:px-6 py-2.5 sm:py-3 rounded-md bg-gradient-to-r from-cyber-purple to-dreamy-pink text-white font-sora 
+           font-semibold transition-all hover:shadow-[0_0_15px_rgba(255,112,166,0.5)] active:scale-[0.98];
   }
   
   .btn-secondary {
-    @apply px-6 py-3 rounded-md border border-neon-mint text-neon-mint font-sora font-semibold 
-           transition-all hover:bg-neon-mint/10 hover:shadow-[0_0_10px_rgba(18,247,214,0.3)];
+    @apply px-4 sm:px-6 py-2.5 sm:py-3 rounded-md border border-neon-mint text-neon-mint font-sora font-semibold 
+           transition-all hover:bg-neon-mint/10 hover:shadow-[0_0_10px_rgba(18,247,214,0.3)] active:scale-[0.98];
   }
   
   .nav-item {
-    @apply relative text-text-grey hover:text-neon-mint transition-colors;
+    @apply relative text-text-grey hover:text-neon-mint transition-colors py-2 px-1;
   }
 
   .nav-item::after {
@@ -85,5 +94,10 @@
   
   .nav-item:hover::after {
     @apply w-full;
+  }
+
+  /* Mobile-first container padding */
+  .container {
+    @apply px-4 sm:px-6 md:px-8;
   }
 }
