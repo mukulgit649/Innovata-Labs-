@@ -24,19 +24,19 @@ const Index = () => {
       <Hero />
       
       {/* About Section */}
-      <section className="py-20 relative" id="about">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="order-2 lg:order-1">
+      <section className="py-12 md:py-20 relative" id="about">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+            <div className="order-2 lg:order-1 space-y-6">
               <div className="inline-flex items-center justify-center gap-2 mb-3 px-4 py-1.5 rounded-full bg-neon-mint/10 border border-neon-mint/20">
                 <Sparkles className="h-4 w-4 text-neon-mint" />
                 <span className="text-sm font-jetbrains text-neon-mint">About Innovata Labs</span>
               </div>
-              <h2 className="text-3xl md:text-4xl font-sora font-bold mb-6">Creating <span className="gradient-text">AI-Powered</span> Solutions</h2>
-              <p className="text-text-grey mb-6 text-lg">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-sora font-bold">Creating <span className="gradient-text">AI-Powered</span> Solutions</h2>
+              <p className="text-text-grey text-base sm:text-lg">
                 Innovata Labs is a future-forward digital innovation company dedicated to solving real-world problems using the power of AI, emotional intelligence, and intuitive design.
               </p>
-              <p className="text-text-grey mb-8">
+              <p className="text-text-grey text-base sm:text-lg">
                 We bring together empathy, technology, and vision to create products that lead in their industries — from career acceleration and mental wellness to personalized learning and astrology-based self-discovery.
               </p>
               <Button className="btn-primary group">
@@ -45,7 +45,7 @@ const Index = () => {
             </div>
             
             <div className="order-1 lg:order-2">
-              <div className="glass-panel p-8 animate-pulse-glow relative overflow-hidden">
+              <div className="glass-panel p-6 sm:p-8 animate-pulse-glow relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-neon-mint/20 to-cyber-purple/20 rounded-full blur-xl"></div>
                 <div className="absolute bottom-0 left-0 w-20 h-20 bg-gradient-to-tr from-dreamy-pink/20 to-neon-mint/20 rounded-full blur-xl"></div>
                 
@@ -91,21 +91,21 @@ const Index = () => {
       </section>
       
       {/* Products Section */}
-      <section className="py-20 relative" id="products">
-        <div className="container mx-auto px-4">
-          <div className="text-center max-w-3xl mx-auto mb-16">
+      <section className="py-12 md:py-20 relative" id="products">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
             <div className="inline-flex items-center justify-center gap-2 mb-3 px-4 py-1.5 rounded-full bg-cyber-purple/10 border border-cyber-purple/20">
               <Sparkles className="h-4 w-4 text-cyber-purple" />
               <span className="text-sm font-jetbrains text-cyber-purple">Our Innovation Suite</span>
             </div>
-            <h2 className="text-3xl md:text-5xl font-sora font-bold mb-6 gradient-text">Our Flagship Products</h2>
-            <p className="text-lg text-text-grey">
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-sora font-bold mb-4 md:mb-6 gradient-text">Our Flagship Products</h2>
+            <p className="text-base sm:text-lg text-text-grey">
               Discover our ecosystem of AI-powered platforms designed to enhance different aspects of human experience
             </p>
           </div>
           
           {/* Product Cards Section */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
             <ProductCard 
               title="Serene" 
               description="A compassionate AI-driven mental health companion that helps users cope with anxiety, depression, loneliness, and burnout."
@@ -179,18 +179,18 @@ const Index = () => {
       </section>
       
       {/* Vision Section */}
-      <section className="py-16 relative overflow-hidden">
-        <div className="container mx-auto px-4">
-          <div className="glass-panel p-8 md:p-12 backdrop-blur-xl">
+      <section className="py-12 md:py-16 relative overflow-hidden">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="glass-panel p-6 sm:p-8 md:p-12 backdrop-blur-xl">
             <div className="text-center max-w-3xl mx-auto">
               <div className="inline-flex items-center justify-center gap-2 mb-3 px-4 py-1.5 rounded-full bg-dreamy-pink/10 border border-dreamy-pink/20">
                 <Sparkles className="h-4 w-4 text-dreamy-pink" />
                 <span className="text-sm font-jetbrains text-dreamy-pink">Our Vision</span>
               </div>
-              <h2 className="text-3xl md:text-4xl font-sora font-bold mb-6">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-sora font-bold mb-4 md:mb-6">
                 Building the <span className="text-dreamy-pink">Future</span> Together
               </h2>
-              <p className="text-text-grey text-lg mb-8">
+              <p className="text-base sm:text-lg text-text-grey mb-6 md:mb-8">
                 To become the most impactful innovation lab of the next decade — empowering millions through problem-solving products that matter.
               </p>
               <Button className="btn-primary" style={{ background: "linear-gradient(to right, #FF70A6, #FFA6C7)" }}>
@@ -204,24 +204,24 @@ const Index = () => {
       </section>
       
       {/* Features Carousel */}
-      <section className="py-16 relative overflow-hidden">
-        <div className="container mx-auto px-4 mb-10">
+      <section className="py-12 md:py-16 relative overflow-hidden">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 mb-8 md:mb-10">
           <div className="text-center">
-            <h2 className="text-3xl md:text-4xl font-sora font-bold mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-sora font-bold mb-3 md:mb-4">
               Products <span className="text-neon-mint">Spotlight</span>
             </h2>
-            <p className="text-text-grey max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg text-text-grey max-w-2xl mx-auto">
               Our innovative AI-powered platforms are designed to enhance different aspects of human experience
             </p>
           </div>
         </div>
         
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <Carousel className="w-full max-w-5xl mx-auto">
             <CarouselContent>
               <CarouselItem>
-                <div className="glass-panel p-8 backdrop-blur-xl">
-                  <div className="flex flex-col md:flex-row gap-8 items-center">
+                <div className="glass-panel p-6 sm:p-8 backdrop-blur-xl">
+                  <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-center">
                     <div className="w-16 h-16 rounded-full bg-cyber-purple/20 flex items-center justify-center shrink-0">
                       <Brain className="h-8 w-8 text-cyber-purple" />
                     </div>
@@ -238,8 +238,8 @@ const Index = () => {
               </CarouselItem>
               
               <CarouselItem>
-                <div className="glass-panel p-8 backdrop-blur-xl">
-                  <div className="flex flex-col md:flex-row gap-8 items-center">
+                <div className="glass-panel p-6 sm:p-8 backdrop-blur-xl">
+                  <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-center">
                     <div className="w-16 h-16 rounded-full bg-neon-mint/20 flex items-center justify-center shrink-0">
                       <FileText className="h-8 w-8 text-neon-mint" />
                     </div>
@@ -256,8 +256,8 @@ const Index = () => {
               </CarouselItem>
               
               <CarouselItem>
-                <div className="glass-panel p-8 backdrop-blur-xl">
-                  <div className="flex flex-col md:flex-row gap-8 items-center">
+                <div className="glass-panel p-6 sm:p-8 backdrop-blur-xl">
+                  <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-center">
                     <div className="w-16 h-16 rounded-full bg-dreamy-pink/20 flex items-center justify-center shrink-0">
                       <GraduationCap className="h-8 w-8 text-dreamy-pink" />
                     </div>
@@ -274,8 +274,8 @@ const Index = () => {
               </CarouselItem>
               {/* AstroWhisper Spotlight */}
               <CarouselItem>
-                <div className="glass-panel p-8 backdrop-blur-xl">
-                  <div className="flex flex-col md:flex-row gap-8 items-center">
+                <div className="glass-panel p-6 sm:p-8 backdrop-blur-xl">
+                  <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-center">
                     <div className="w-16 h-16 rounded-full bg-pink-400/20 flex items-center justify-center shrink-0">
                       <span className="text-3xl">✨</span>
                     </div>
